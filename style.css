@@ -1,17 +1,47 @@
 body {
     text-align: center;
     margin:0px;
-    background: black;
+    background-image: url("img/clouds.jpg");
+    background-size: cover;
+    font-family: cursive;
 }
 
 h1 {
     color: white;
-    font-size: 40pt;
+    font-size: 25pt;
 }
 
+a {
+    color: white;
+    text-shadow: 0px 0px 0px transparent;
+    transition: text-shadow 0.75s ease-in-out;
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 35px gold;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+} 
+
 .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
