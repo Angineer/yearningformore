@@ -1,9 +1,6 @@
 body {
     text-align: center;
     margin:0px;
-    background-image: url("img/clouds.jpg");
-    background-size: cover;
-    font-family: cursive;
 }
 
 h1 {
@@ -11,37 +8,78 @@ h1 {
     font-size: 25pt;
 }
 
-a {
+a.enter {
     color: white;
     text-shadow: 0px 0px 0px transparent;
     transition: text-shadow 0.75s ease-in-out;
 }
 
 /* unvisited link */
-a:link {
+a.enter:link {
     text-decoration: none;
 }
 
 /* visited link */
-a:visited {
+a.enter:visited {
     text-decoration: none;
 }
 
 /* mouse over link */
-a:hover {
+a.enter:hover {
     text-decoration: none;
     text-shadow: 0px 0px 35px gold;
 }
 
 /* selected link */
-a:active {
+a.enter:active {
     text-decoration: none;
-} 
+}
 
-.center {
+table {
+/*    border: 1px solid red;*/
+    width: 100%;
+    table-layout: fixed;
+    padding: 10px;
+/*    border-collapse: collapse;*/
+}
+td {
+    background-color: seashell;
+}
+
+p {
+    margin: 8px 0px;
+}
+
+.landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("img/clouds.jpg");
+    background-size: cover;
+    font-family: cursive;
+}
+
+.main {
+    background-color: gray;
+    color: white;
+    width: 1000px;
+    margin: auto;
+}
+
+.content {
+    color: black;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    padding: 10px 20px;
+}
+
+.photo {
+    height: 400px;
+    object-fit: contain;
+    float: right;
+    margin: 8px 0px;
 }
