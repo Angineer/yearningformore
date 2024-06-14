@@ -3,6 +3,9 @@ body {
     margin:0px;
 }
 
+/****************/
+/* Landing page */
+/****************/
 h1 {
     color: white;
     font-size: 25pt;
@@ -35,25 +38,6 @@ a.enter:active {
     text-decoration: none;
 }
 
-table {
-/*    border: 1px solid red;*/
-    width: 100%;
-    table-layout: fixed;
-    padding: 10px;
-/*    border-collapse: collapse;*/
-}
-td {
-    background-color: seashell;
-}
-
-p {
-    margin: 8px 0px;
-}
-
-.nav {
-    padding: 10px 0px;
-}
-
 .landing {
     display: flex;
     flex-direction: column;
@@ -65,24 +49,64 @@ p {
     font-family: cursive;
 }
 
+/****************/
+/* Content pages */
+/****************/
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    padding: 10px;
+}
+th {
+    background-color: seashell;
+}
+td {
+    background-color: seashell;
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+a {
+    color: #444;
+}
+
+p {
+    color: #444;
+    margin: 8px 0px;
+}
+
+.nav {
+    padding: 10px 0px;
+}
+
 .main {
-    background-color: #1a1a1a;
+    background-color: #356;
     color: white;
     max-width: 1000px;
     margin: auto;
 }
 
 .content {
-    color: black;
-    height: 600px;
     display: flex;
     flex-direction: column;
-/*    justify-content: center;*/
     padding: 10px 20px;
+    min-width: 100px;
 }
 
 .photo {
-    height: 400px;
+    max-height: 400px;
     object-fit: contain;
     float: right;
     margin: 8px 0px;
